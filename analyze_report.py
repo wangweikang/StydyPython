@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
 import jieba
 import requests
 from bs4 import BeautifulSoup
