@@ -16,5 +16,3 @@ def exteat_text(url):
 
 
     return text
-
-def
