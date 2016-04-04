@@ -82,4 +82,3 @@ def arc(t, r, angle):
 
 arc(bob, 60, 275)
 
-turtle.mainloop()
