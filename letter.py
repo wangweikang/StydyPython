@@ -16,5 +16,4 @@ def cap_string(str_='xiao jing mo meng meng da'):
     srlist = [x[0].upper() + x[1:] + ' ' for x in str_.split(' ')]
     print(''.join(srlist))
 
-
 cap_string()
