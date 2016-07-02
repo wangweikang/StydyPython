@@ -1,18 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-# 题 5
-# 写一个 Queue 类，它有两个方法，用法如下
-
-# q = Queue()
-# q.enqueue(1)
-# q.enqueue(2)
-# q.enqueue(3)
-
-# print(q.dequeue()) # 1
-# print(q.dequeue()) # 2
-# print(q.dequeue()) # 3
-
 """
 @author: wangweikang
 @software: PyCharm Community Edition

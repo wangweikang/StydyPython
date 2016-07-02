@@ -24,5 +24,4 @@ def prime_numbers():
         if n == int(x / 2) - 1:
             print(x)
 
-
 prime_numbers()

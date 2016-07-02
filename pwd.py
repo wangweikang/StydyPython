@@ -37,8 +37,6 @@ def valid_password(pwd=''):
 
     return True
 
-
 p = 'a22_d'
 valid_password(p)
 print(valid_password(p))
-
