@@ -44,7 +44,26 @@ def select_sort(arry):
         arry[min],arry[i] = arry[i],arry[min]
     return arry
 ```
-####
+#### 三、插入排序
+> 通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。
+
+![排序演示](http://wuchong.me/img/Insertion-sort-example-300px.gif)
+```python
+def insert_sort(arry):
+    n = len(ary)
+    for i in range(1,n):
+        if arry[i] < arry[i-1]:
+            temp = arry[i]
+            index = i   #待插入的下标
+            for j in range(i - 1, -i, -1):
+                if arry[j] > temp:
+                    arry[j + 1] = arry[j]
+                    index = j
+                else:
+                    break
+            arry[index] = temp
+    return arry
+```
 ####
 ####
 ####
