@@ -1,5 +1,6 @@
 ## Algorithms
 >> 所有默认 min -> max
+
 #### 冒泡排序
 
 ```python
@@ -12,6 +13,7 @@ def dubble_sort(arry):
     return arry
 ```
 > 优化版：通过记录最后发生交换的位置确定下一次循环的范围
+
 ```python
 def dubble_sort_review(arry):
     n = len(arry)
