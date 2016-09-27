@@ -1,6 +1,6 @@
 ## Algorithms
 
-#### -冒泡排序
+#### - 冒泡排序
 
 ``` python
 def dubble_sort(arry):
