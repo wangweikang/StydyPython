@@ -2,7 +2,7 @@
 
 #### - 冒泡排序
 
-```
+```python
 def dubble_sort(arry):
     n = len(arry)
     for i in range(n):
