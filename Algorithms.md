@@ -2,7 +2,7 @@
 
 #### -冒泡排序
 
-''' python
+``` python
 def dubble_sort(arry):
     n = len(arry)
     for i in range(n):
@@ -10,7 +10,7 @@ def dubble_sort(arry):
             if arry[j-1] > arry[j]:
                 arry[j-1],arry[j] = arry[j], arry[j-1]
     return arry
-'''
+```
 ####
 ####
 ####
