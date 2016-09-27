@@ -52,15 +52,22 @@ def select_sort(arry):
 def insert_sort(arry):
     n = len(ary)
     for i in range(1,n):
+        # 后一个元素和前一个元素比较
+        # 如果前一个元素大
         if arry[i] < arry[i-1]:
+            #将这个元素取出
             temp = arry[i]
-            index = i   #待插入的下标
+            #保存下标
+            index = i
+            #从后往前依次比较每一个元素
             for j in range(i - 1, -i, -1):
+                # 和比取出的元素大的元素交换
                 if arry[j] > temp:
                     arry[j + 1] = arry[j]
                     index = j
                 else:
                     break
+            #插入元素
             arry[index] = temp
     return arry
 ```
