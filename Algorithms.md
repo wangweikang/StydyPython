@@ -1,7 +1,8 @@
 ## Algorithms
 >> 所有默认 min -> max
 
-#### 冒泡排序
+![算法指标对比](http://ww1.sinaimg.cn/large/81b78497jw1emncvtdf1qj20u10afn0r.jpg)
+#### 一、冒泡排序
 
 ```python
 def dubble_sort(arry):
@@ -30,7 +31,7 @@ def dubble_sort_review(arry):
     return arry
 ```
 
-#### 选择排序
+#### 二、选择排序
 
 ```python
 def select_sort(arry):
