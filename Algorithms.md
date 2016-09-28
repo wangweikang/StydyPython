@@ -71,7 +71,28 @@ def insert_sort(arry):
             arry[index] = temp
     return arry
 ```
-####
+#### 四、希尔排序
+> 将数组列在一个表中并对列分别进行插入排序，重复这过程，不过每次用更长的列（步长更长了，列数更少了）来进行。最后整个表就只有一列了。
+
+```python
+def shell_sort(arry):
+    n = len(arry)
+    #初始步长
+    gap = round(n/2)
+    while gap > 0:
+        for i in range(gap, n):
+            # 插入排序
+            temp = arry[i]
+            j = i
+            while(j >= gap and arry[j - gap] > temp):
+                arry[j] = arry[j - gap]
+                j = j - gap
+            arry[j] = temp
+        # 得到新的步长
+        gap = round(gap/2)
+    return arry
+```
+> 想来想去，其实希尔排序就是插入排序的优化版
 
 ####
 ####
