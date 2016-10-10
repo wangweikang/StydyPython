@@ -44,6 +44,7 @@ def select_sort(arry):
         arry[min],arry[i] = arry[i],arry[min]
     return arry
 ```
+
 #### 三、插入排序
 > 通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。
 
@@ -71,6 +72,7 @@ def insert_sort(arry):
             arry[index] = temp
     return arry
 ```
+
 #### 四、希尔排序
 > 将数组列在一个表中并对列分别进行插入排序，重复这过程，不过每次用更长的列（步长更长了，列数更少了）来进行。最后整个表就只有一列了。
 
@@ -99,7 +101,7 @@ def shell_sort(arry):
 
 ![排序演示](http://wuchong.me/img/Merge-sort-example-300px.gif)
 
-代码用迭代法实现
+代码用迭代法实现:
 ```python
 def merge_sort(arry):
     if len(arry) <= 1:  #长度不大于1的数组是有序的
@@ -125,7 +127,39 @@ def merge(left, right):
     result += right[r:]
     return result
 ```
-####
+
+#### 六、快速排序
+> 1.挑出一个元素作为基准数。2.将比基准数大的放到右边，小于或等于它的数都放到左边。3.左右区间递归执行第二步，直至各区间只有一个数。
+
+![排序演示](http://wuchong.me/img/Quicksort-example.gif)
+
+```python
+def quick_sort(arry):
+    less = []
+    pivotList = []
+    more = []
+    #递归
+    if len(arry) <= 1:
+        return arry
+    else:
+        #将第一个数作为基准
+        pivot = arry[0]
+        for i in arry:
+            #将比基准小的数放到less数组
+            if i < pivot;
+                less.append(i)
+            #将比基准大的数放到more数组
+            elif i > piovt:
+                more.append(i)
+            #将和基准相同的数保存在基准数列
+            else:
+                pivotList.append(i)
+        #对less和more数组继续进行排序
+        less = quick_sort(less)
+        more = quick_sort(more)
+        return less + pivotList + more
+```
+
 ####
 ####
 ####
