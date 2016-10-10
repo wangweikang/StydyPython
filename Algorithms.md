@@ -160,6 +160,10 @@ def quick_sort(arry):
         return less + pivotList + more
 ```
 
-####
-####
-####
+#### 七、堆排序
+
+
+#### 八、系统自带排序 (逃
+```python
+arry.sort()
+```
