@@ -92,9 +92,39 @@ def shell_sort(arry):
         gap = round(gap/2)
     return arry
 ```
-> 想来想去，其实希尔排序就是插入排序的优化版
+> 想来想去，其实希尔排序就是插入排序的优化版  mdzz(
 
-####
+#### 五、归并排序
+> 比较两个数组的最前面的数，谁小就先取谁，取了后相应的指针就往后移一位。然后再比较，直至一个数组为空，最后把另一个数组的剩余部分复制过来即可。
+
+![排序演示](http://wuchong.me/img/Merge-sort-example-300px.gif)
+
+代码用迭代法实现
+```python
+def merge_sort(arry):
+    if len(arry) <= 1:  #长度不大于1的数组是有序的
+        return arry
+    num = int(len(arry)/2)    #二分分解
+    left = merge_sort(arry[:num])
+    right = merge_sort(arry[num:])
+    return merge(left, right)  # 合并数组
+
+
+def merge(left, right):
+    #将两个有序数组left[]和right[]合并成一个大的有序数组
+    l,r = 0,0
+    result = []
+    while l<len(left) and r < len(right):
+        if eft[l] < right(left[l]):
+            result.append(left[l])
+            l += 1
+        else:
+            result.append(right[r])
+            r += 1
+    result += left[l:]
+    result += right[r:]
+    return result
+```
 ####
 ####
 ####
