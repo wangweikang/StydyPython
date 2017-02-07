@@ -26,4 +26,6 @@ def letter_count(str1='hello'):
     lst = [(k, v) for k, v in d.items()]
     print(lst)
 
-letter_count()
+
+if __name__ == '__main__':
+    letter_count()
